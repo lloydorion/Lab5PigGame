@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">pigGameApp</string>
+    <string name="player1_Label">Player 1</string>
+    <string name="username_Label">Username</string>
+    <string name="player2_Label">Player 2</string>
+    <string name="playerTurn_Label" translatable="false">Nobody\'s Turn</string>
+    <string name="pointsDesc_Label">Points for this round:</string>
+    <string name="runningPointsTotal_Label">0 Points</string>
+    <string name="rollDie_Button">Roll Die</string>
+    <string name="endTurn_Button">End Turn</string>
+    <string name="newGame_Button">New Game</string>
+    <string name="dieRoll_desc">Die roll image</string>
+    <string name="username_placeholder_text" >Enter username</string>
+    <string name="player1Score_Label">0 Total Points</string>
+    <string name="plaer2Score_Label">0 Total Points</string>
+    <string name="app_name_title">Pig Game Build V4</string>
+
+    <!-- String values for preferences -->
+    <string-array name="dieList">
+        <item>One</item>
+        <item>Two</item>
+    </string-array>
+
+    <string-array name="dieListValues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="965dp"
+        android:layout_height="509dp"
+        android:layout_marginTop="130dp"
+        android:background="#2196F3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/newGame_Button"
+        android:layout_width="308dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/white"
+        android:text="@string/newGame_Button"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2UsernameTextEntry" />
+
+    <Button
+        android:id="@+id/resumeGame_Button"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:text="Resume Game"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/newGame_Button" />
+
+    <EditText
+        android:id="@+id/player1UsernameTextEntry"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="180dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/player1_Label"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:text="@string/username_placeholder_text"
+        android:textColor="#2196F3"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1_Label2" />
+
+    <TextView
+        android:id="@+id/player1_Label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="228dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:text="@string/player1_Label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#2196F3"
+        android:textColorLink="#FFFFFF"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/player2UsernameTextEntry"
+        android:layout_width="132dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/player2_Label"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:text="@string/username_placeholder_text"
+        android:textColor="#2196F3"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2_Label2" />
+
+    <TextView
+        android:id="@+id/player2_Label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:text="@string/player2_Label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#2196F3"
+        android:textColorLink="#FFFFFF"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="303dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:lineSpacingExtra="3sp"
+        android:text="Enter Player Usernames"
+        android:textAlignment="textStart"
+        android:textColor="#FF2196F3"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="304dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="20dp"
+        android:text="This pig game is played using an 8-sided die that can be rolled as many times as you wish. However, if you happen to roll an 8, your turn ends automatically AND you lose all of your accumulated points; the other player would then take their turn. A player wins by reaching the determined points limit."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:text="How to Play"
+        android:textAlignment="center"
+        android:textColor="#FF2196F3"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
